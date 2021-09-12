@@ -81,9 +81,7 @@ length(unique(sleep_day$Id)) #24
 right_join(daily_activity_user_group, sleep_day, by="Id") -> user_sleep
 ggplot(data=user_sleep,mapping = aes(ActivityLevel, TotalMinutesAsleep, color=ActivityLevel))+geom_boxplot()
 length(unique(heart_rate$Id))#14
-ggplot(daily_activity_user_group, mapping=aes(date2, TotalSteps)+geom_line()
-## time people are more active
- 
+
  
 
 
